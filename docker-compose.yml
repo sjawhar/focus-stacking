@@ -1,0 +1,14 @@
+version: '3'
+services:
+  notebook:
+    build: .
+    image: sjawhar/focus_stack
+    container_name: focus_stack
+    volumes:
+      - "./:/home/jovyan/work"
+    ports:
+      - "8888:8888"
+    command:
+      - "start-notebook.sh"
+      - "--NotebookApp.token=''"
+      - "--NotebookApp.iopub_data_rate_limit=10000000000"

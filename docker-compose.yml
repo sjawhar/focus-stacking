@@ -2,8 +2,8 @@ version: '3'
 services:
   notebook:
     build: .
-    image: sjawhar/focus_stack
-    container_name: focus_stack
+    image: sjawhar/focus-stacking
+    container_name: focus-stacking
     volumes:
       - "./:/home/jovyan/work"
     ports:
